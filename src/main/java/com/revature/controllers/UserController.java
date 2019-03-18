@@ -70,5 +70,10 @@ public class UserController {
 	public User update(@RequestBody User user) {
 		return userService.updateProfile(user);
 	}
+	
+	@PostMapping("personal-address")
+	public User saveAddress(@RequestBody User user) {
+		return userService.saveAddress(user);
+	}
 
 }
